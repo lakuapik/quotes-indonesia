@@ -17,6 +17,10 @@
     },
     {
         "by": "Albert Einstein",
+        "quote": "Ilmu pengetahuan tanpa agama adalah pincang."
+    },
+    {
+        "by": "Albert Einstein",
         "quote": "Perbedaan masa lalu, sekarang, dan masa depan tak lebih dari ilusi yang keras kepala."
     },
     {
@@ -28,11 +32,23 @@
         "quote": "Belas kasihanlah terhadap sesama, bersikap keraslah terhadap diri sendiri."
     },
     {
+        "by": "Alex Osborn",
+        "quote": "Cara paling baik untuk menggerakkan diri Anda ialah memberi tugas kepada diri sendiri."
+    },
+    {
+        "by": "Alexander A. Bogomoletz",
+        "quote": "Kita tidak boleh kehilangan semangat. Semangat adalah stimulan terkuat untuk mencintai, berkreasi dan berkeinginan untuk hidup lebih lama."
+    },
+    {
         "by": "Alexander Solzhenitsyn",
         "quote": "Manusia akan bahagia selama ia memilih untuk bahagia."
     },
     {
-        "by": "Ali bin Abi Talib",
+        "by": "Ali Javan",
+        "quote": "Saya tidak berharap menjadi segalanya bagi setiap orang. Saya hanya ingin menjadi sesuatu untuk seseorang."
+    },
+    {
+        "by": "Ali bin Abi Thalib",
         "quote": "Bahagialah orang yang dapat menjadi tuan untuk dirinya, menjadi kusir untuk nafsunya dan menjadi kapten untuk bahtera hidupnya."
     },
     {
@@ -45,11 +61,11 @@
     },
     {
         "by": "Anonim",
-        "quote": "Penundaan adalah kuburan dimana peluang dikuburkan."
+        "quote": "Terbuka untuk Anda, begitulah Tuhan memberi kita jalan untuk berusaha. Jangan pernah berfikir jalan sudah tertutup."
     },
     {
         "by": "Anonim",
-        "quote": "Terbuka untuk Anda, begitulah Tuhan memberi kita jalan untuk berusaha. Jangan pernah berfikir jalan sudah tertutup."
+        "quote": "Penundaan adalah kuburan dimana peluang dikuburkan."
     },
     {
         "by": "Antonie De Saint",
@@ -72,12 +88,24 @@
         "quote": "Masalah akan datang cepat atau lambat. Jika masalah datang, sambut dengan sebaik mungkin. Semakin ramah Anda menyapanya, semakin cepat ia pergi."
     },
     {
+        "by": "Ayn Rand",
+        "quote": "Orang-orang kreatif termotivasi oleh keinginan untuk maju, bukan oleh keinginan untuk mengalahkan orang lain."
+    },
+    {
         "by": "B. J. Habibie",
         "quote": "Dimanapun engkau berada selalulah menjadi yang terbaik dan berikan yang terbaik dari yang bisa kita berikan."
     },
     {
         "by": "Balzac",
         "quote": "Kebencian seperti halnya cinta, berkobar karena hal-hal kecil."
+    },
+    {
+        "by": "Barbara Sher",
+        "quote": "Anda tidak perlu harus berhasil pada kali pertama."
+    },
+    {
+        "by": "Beecher",
+        "quote": "Satu jam yang intensif, jauh lebih baik dan menguntungkan daripada bertahun-tahun bermimpi dan merenung-renung."
     },
     {
         "by": "Benjamin Disraeli",
@@ -90,6 +118,10 @@
     {
         "by": "Bill Cosby",
         "quote": "Aku tidak tahu kunci sukses itu apa, tapi kunci menuju kegagalan adalah mencoba membuat semua orang senang."
+    },
+    {
+        "by": "Bill Gates",
+        "quote": "Konsumen yang paling tidak puas adalah sumber berharga untuk belajar."
     },
     {
         "by": "Bill Mccartney",
@@ -133,7 +165,15 @@
     },
     {
         "by": "Ching Hai",
+        "quote": "Memperbaiki diri kita adalah memperbaiki dunia."
+    },
+    {
+        "by": "Ching Hai",
         "quote": "Jangan membeda-bedakan pekerjaan mana yang baik dan mana yang buruk. Masalah muncul jika kita membeda-bedakan dan memihak sesuatu."
+    },
+    {
+        "by": "Ching Hai",
+        "quote": "Kita bekerja harus tanpa pamrih. Itu berlaku untuk segala pekerjaan. Pengabdian tanpa syarat adalah yang terbaik."
     },
     {
         "by": "Ching Hai",
@@ -141,7 +181,11 @@
     },
     {
         "by": "Ching Hai",
-        "quote": "Memperbaiki diri kita adalah memperbaiki dunia."
+        "quote": "Carilah uang secukupnya saja untuk membiayai kehidupan, agar dapat menyisihkan waktu dan tenaga untuk melatih spiritual."
+    },
+    {
+        "by": "Christopher Colombus",
+        "quote": "Harta benda tak membuat seseorang menjadi kaya raya, mereka hanya membuatnya lebih sibuk."
     },
     {
         "by": "Cicero",
@@ -149,15 +193,11 @@
     },
     {
         "by": "Clarence Darrow",
-        "quote": "/pic Kebebasan itu berasal dari manusia, tidak dari undang-undang atau institusi."
-    },
-    {
-        "by": "Clarence Darrow",
         "quote": "Kebebasan itu berasal dari manusia, tidak dari undang-undang atau institusi."
     },
     {
         "by": "Confucius",
-        "quote": "Kebanggaan kita yang terbesar bukan karena tidak pernah gagal, tetapi bangkit kembali setiap kita jatuh."
+        "quote": "Hidup ini benar-benar sederhana, tapi kita malah bersikeras membuatnya menjadi rumit."
     },
     {
         "by": "Confucius",
@@ -166,6 +206,10 @@
     {
         "by": "Confucius",
         "quote": "Orang yang melakukan kesalahan dan tidak memperbaiki kesalahannya, melalakukan kesalahan yang lainnya."
+    },
+    {
+        "by": "Confucius",
+        "quote": "Kebanggaan kita yang terbesar bukan karena tidak pernah gagal, tetapi bangkit kembali setiap kita jatuh."
     },
     {
         "by": "Cowper",
@@ -181,19 +225,27 @@
     },
     {
         "by": "Dale Carnegie",
+        "quote": "Satu-satunya cara agar kita memperoleh kasih sayang, adalah jangan menuntut agar kita dicintai, tetapi mulailah memberi kasih sayang kepada orang lain tanpa mengharapkan balasan."
+    },
+    {
+        "by": "Dale Carnegie",
         "quote": "Bila orang yang kuatir akan kekurangannya mau mensyukuri kekayaan yang mereka miliki, mereka akan berhenti kuatir."
+    },
+    {
+        "by": "Dale Carnegie",
+        "quote": "Usahakan membentuk suatu hubungan \"kawat\" antara otak dan hati Anda."
+    },
+    {
+        "by": "Dale Carnegie",
+        "quote": "Senyuman akan membuat kaya jiwa seseorang yang menerimanya, tanpa membuat miskin seseorang yang memberikannya."
     },
     {
         "by": "Dale Carnegie",
         "quote": "Orang jarang sukses kecuali jika mereka senang dengan apa yang dikerjakannya."
     },
     {
-        "by": "Dale Carnegie",
-        "quote": "Satu-satunya cara agar kita memperoleh kasih sayang, adalah jangan menuntut agar kita dicintai, tetapi mulailah memberi kasih sayang kepada orang lain tanpa mengharapkan balasan."
-    },
-    {
-        "by": "Dale Carnegie",
-        "quote": "Senyuman akan membuat kaya jiwa seseorang yang menerimanya, tanpa membuat miskin seseorang yang memberikannya."
+        "by": "David Livingston",
+        "quote": "Saya akan pergi kemanapun selama itu arahnya ke depan."
     },
     {
         "by": "David V. Ambrose",
@@ -202,6 +254,14 @@
     {
         "by": "David Weinbaum",
         "quote": "Rahasia menuju hidup kaya adalah mempunyai lebih banyak awal ketimbang akhir."
+    },
+    {
+        "by": "Desbarolles",
+        "quote": "Kebenaran yang tidak dimengerti akan menjadi kesalahan."
+    },
+    {
+        "by": "Descrates",
+        "quote": "Saya berpikir, karena itu saya ara."
     },
     {
         "by": "Djamaludin Abassy",
@@ -216,12 +276,12 @@
         "quote": "Sahabat terbaik dan musuh terburuk kita adalah pikiran-pikiran kita. Pikiran dapat lebih baik dari seorang dokter atau seorang bankir atau seorang teman kepercayaan. Juga dapat lebih berbahaya dadi penjahat."
     },
     {
-        "by": "Dr. Johnnetta Cole",
-        "quote": "Jika kamu ingin pergi cepat, pergilah sendiri. Jika kamu ingin pergi jauh, pergilah bersama-sama."
-    },
-    {
         "by": "Dr. Ronald Niednagel",
         "quote": "Pergilah sejauh Anda bisa memandang, dan ketika Anda tiba disana, Anda akan memandang lebih jauh."
+    },
+    {
+        "by": "Dr. Johnnetta Cole",
+        "quote": "Jika kamu ingin pergi cepat, pergilah sendiri. Jika kamu ingin pergi jauh, pergilah bersama-sama."
     },
     {
         "by": "Dwigt D. Esenhower",
@@ -246,6 +306,10 @@
     {
         "by": "Edward L. Curtis",
         "quote": "Optimisme yang tidak disertai dengan usaha hanya merupakan pemikiran semata yang tidak menghasilkan buah."
+    },
+    {
+        "by": "Edward de Bono",
+        "quote": "Jika Anda termasuk orang yang senang menunggu datangnya peluang, Anda adalah bagian dari manusia pada umumnya."
     },
     {
         "by": "Edy Murphy",
@@ -316,16 +380,24 @@
         "quote": "Rumput yang paling kuat tumbuhnya terdapat di atas tanah yang paling keras."
     },
     {
-        "by": "Gandhi",
-        "quote": "Kebahagiaan tergantung pada apa yang dapat Anda berikan, bukan pada apa yang Anda peroleh."
+        "by": "Galileo Galilei",
+        "quote": "Kamu tidak dapat mengajari seseorang apa pun, kamu hanya bisa membantunyanya menemukan apa yang ada dalam dirinya sendiri."
     },
     {
         "by": "Gandhi",
         "quote": "Mereka yang berjiwa lemah tak akan mampu memberi seuntai maaf tulus. Pemaaf sejati hanya melekat bagi mereka yang berjiwa tangguh."
     },
     {
+        "by": "Gandhi",
+        "quote": "Kebahagiaan tergantung pada apa yang dapat Anda berikan, bukan pada apa yang Anda peroleh."
+    },
+    {
         "by": "Gen Collin Powel",
         "quote": "Tak ada rahasia untuk menggapai sukses. Sukses itu dapat terjadi karena persiapan, kerja keras dan mau belajar dari kegagalan."
+    },
+    {
+        "by": "George B. Shaw",
+        "quote": "Hidup bukanlah tentang menemukan dirimu sendiri. Hidup adalah tentang menciptakan dirimu sendiri."
     },
     {
         "by": "George III",
@@ -357,14 +429,6 @@
     },
     {
         "by": "Hamka",
-        "quote": "Berani menegakkan keadilan, walaupun mengenai diri sendiri, adalah puncak segala keberanian."
-    },
-    {
-        "by": "Hamka",
-        "quote": "Hawa nafsu membawa kesesatan dan tidak berpedoman. Sementara akal menjadi pedoman menuju keutamaan. Hawa nafsu menyuruhmu berangan-angan, tetapi akal menyuruhmu menimbang."
-    },
-    {
-        "by": "Hamka",
         "quote": "Kecantikan yang abadi terletak pada keelokan adab dan ketinggian ilmu seseorang, bukan terletak pada wajah dan pakaiannya."
     },
     {
@@ -372,8 +436,20 @@
         "quote": "Kita harus yakin bahwa apa yang ditentukan oleh Tuhan untuk kita, itulah yang terbaik."
     },
     {
+        "by": "Hamka",
+        "quote": "Berani menegakkan keadilan, walaupun mengenai diri sendiri, adalah puncak segala keberanian."
+    },
+    {
+        "by": "Hamka",
+        "quote": "Hawa nafsu membawa kesesatan dan tidak berpedoman. Sementara akal menjadi pedoman menuju keutamaan. Hawa nafsu menyuruhmu berangan-angan, tetapi akal menyuruhmu menimbang."
+    },
+    {
         "by": "Harriet Braiker",
         "quote": "Berusaha berhasil untuk memotivasi dirimu, tapi berusaha untuk selalu sempurna akan membuat tertekan."
+    },
+    {
+        "by": "Helen Keller",
+        "quote": "Kita tidak akan belajar berani dan sabar jika di dunia ini hanya ada kegembiraan."
     },
     {
         "by": "Henri Ford",
@@ -385,11 +461,11 @@
     },
     {
         "by": "Henry Ford",
-        "quote": "Berpikir itu adalah pekerjaan yang berat di antara segala jenis pekerjaan. Itulah sebabnya sedikit sekali orang yang senang melakukannya."
+        "quote": "Idealis adalah orang yang membantu orang lain untuk makmur."
     },
     {
         "by": "Henry Ford",
-        "quote": "Idealis adalah orang yang membantu orang lain untuk makmur."
+        "quote": "Berpikir itu adalah pekerjaan yang berat di antara segala jenis pekerjaan. Itulah sebabnya sedikit sekali orang yang senang melakukannya."
     },
     {
         "by": "Henry Longfellow",
@@ -436,8 +512,20 @@
         "quote": "Jangan menunggu keadaan yang ideal. Jangan juga menunggu peluang-peluang terbaik. Keduanya tak akan pernah datang."
     },
     {
+        "by": "Jeff Goins",
+        "quote": "Kebanyakan orang sukses yang saya kenal bukan orang yang sibuk, mereka orang yang focus."
+    },
+    {
         "by": "Jerry West",
         "quote": "Anda tidak dapat melakukan banyak hal di hidup Anda, jika Anda hanya bekerja di hari-hari yang Anda rasakan baik."
+    },
+    {
+        "by": "Jim Rohn",
+        "quote": "Tembok yang kita bangun untuk menghambat kesedihan, juga membuat kita tertutup dari kebahagiaan."
+    },
+    {
+        "by": "Jim Rohn",
+        "quote": "Jika Anda tidak merancang hidup Anda sendiri, kemungkinan Anda akan menjalani rencana orang lain. Apa yang mereka rencanakan untuk Anda? Tidak banyak."
     },
     {
         "by": "Jim Ryan",
@@ -452,6 +540,10 @@
         "quote": "Aku tak bisa merubah arah angin, tapi aku bisa menyesuaikan layarku untuk tetap bisa mencapai tujuanku."
     },
     {
+        "by": "Joan Baez",
+        "quote": "Kita tak bisa memilih bagaimana kita meninggal atau kapan. Kita hanya bisa memutuskan bagaimana kita hidup. Sekarang."
+    },
+    {
         "by": "John B. Gough",
         "quote": "Jika Anda ingin sukses, Anda harus menciptakan peluang untuk diri sendiri."
     },
@@ -461,11 +553,11 @@
     },
     {
         "by": "John C. Maxwell",
-        "quote": "Bekerja keras sekarang, merasakannya nanti. Bermalas-malas sekarang, merasakan akibatnya nanti."
+        "quote": "Untuk menangani diri Anda sendiri, gunakan kepala Anda. Untuk menangani orang lain, gunakan hati Anda."
     },
     {
         "by": "John C. Maxwell",
-        "quote": "Untuk menangani diri Anda sendiri, gunakan kepala Anda. Untuk menangani orang lain, gunakan hati Anda."
+        "quote": "Bekerja keras sekarang, merasakannya nanti. Bermalas-malas sekarang, merasakan akibatnya nanti."
     },
     {
         "by": "John Craig",
@@ -492,16 +584,20 @@
         "quote": "Seberapa jauh Anda gagal, tidak masalah, tetapi yang penting seberapa sering Anda bangkit kembali."
     },
     {
+        "by": "John Q. Adams",
+        "quote": "Jika tindakan-tindakan Anda mengilhami orang lain untuk bermimpi lebih, belajar lebih, bekerja lebih, dan menjadi lebih baik, Anda adalah seorang pemimpin."
+    },
+    {
+        "by": "John Ruskin",
+        "quote": "Saya yakin, ujian pertama bagi orang besar ialah kerendahan hati."
+    },
+    {
         "by": "John Ruskin",
         "quote": "Penghargaan tertinggi untuk kerja keras seseorang bukanlah apa yang ia hasilkan, tapi bagaimana ia berkembang karenanya."
     },
     {
         "by": "John Ruskin",
         "quote": "Penghargaan tertinggi untuk kerja keras seseorang bukanlah apa yang ia hasilkan, tetapi bagaimana ia berkembang karenanya."
-    },
-    {
-        "by": "John Ruskin",
-        "quote": "Saya yakin, ujian pertama bagi orang besar ialah kerendahan hati."
     },
     {
         "by": "John Wolfgang",
@@ -518,6 +614,14 @@
     {
         "by": "Junius",
         "quote": "Integritas seseorang diukur dengan tingkah lakunya bukan profesinya."
+    },
+    {
+        "by": "Kahlil Gibran",
+        "quote": "Kita berdoa kalau kesusahan dan membutuhkan sesuatu, mestinya kita juga berdoa dalam kegembiraan besar dan saat rezeki melimpah."
+    },
+    {
+        "by": "Kahlil Gibran",
+        "quote": "Untuk memahami hati dan pikiran seseorang, jangan lihat apa yang sudah dia capai, tapi lihat apa yang dia cita-citakan."
     },
     {
         "by": "Keri Russel",
@@ -564,6 +668,14 @@
         "quote": "Kerendahan hati merupakan ruang tunggu bagi kesempurnaan."
     },
     {
+        "by": "Maria Sharapova",
+        "quote": "Saya belajar banyak dari kekalahan. Dan kekalahan-kekalahan itu, membuat saya semakin tabah."
+    },
+    {
+        "by": "Mark Cuban",
+        "quote": "Buatlah usaha Anda berhasil dengan satu-satunya cara: kerja keras!."
+    },
+    {
         "by": "Mark Twain",
         "quote": "Kebaikan adalah bahasa yang dapat didengar si tuli dan bisa dilihat si buta."
     },
@@ -600,6 +712,10 @@
         "quote": "Pepatah adalah kalimat singkat berdasarkan pengalaman panjang."
     },
     {
+        "by": "Miguel de Unamuno",
+        "quote": "Tidak dicintai orang lain memang menyedihkan, tapi lebih menyedihkan lagi kalau tidak bisa mencintai orang lain."
+    },
+    {
         "by": "N. H. Casson",
         "quote": "Kemiskinan jiwa lebih mengerikan daripada kemiskinan jasmani atau materi."
     },
@@ -632,6 +748,10 @@
         "quote": "Melakukan yang terbaik pada saat ini akan menempatkan Anda ke tempat terbaik pada saat berikutnya."
     },
     {
+        "by": "Oscar Wilde",
+        "quote": "Jika seseorang menyatakan kebenaran, dia yakin; cepat atau lambat; akan mendapatkannya."
+    },
+    {
         "by": "Pablo Picasso",
         "quote": "Bila semangat Anda menurun, lakukanlah sesuatu. Kalau Anda telah melakukan sesuatu keadaan tidak berubah, lakukanlah sesuatu yang berbeda."
     },
@@ -645,11 +765,15 @@
     },
     {
         "by": "Pepatah Cina",
+        "quote": "Beranilah menyadari kesalahan dan mulai lagi."
+    },
+    {
+        "by": "Pepatah Cina",
         "quote": "Benar jadi berani."
     },
     {
         "by": "Pepatah Cina",
-        "quote": "Beranilah menyadari kesalahan dan mulai lagi."
+        "quote": "Orang yang bertanya, bodoh dalam 5 menit. Dan orang yang tidak bertanya akan tetap bodoh untuk selamanya."
     },
     {
         "by": "Pepatah Cina",
@@ -657,11 +781,11 @@
     },
     {
         "by": "Pepatah Cina",
-        "quote": "Orang yang memindahkan gunung memulai dengan memindahkan batu-batu kecil."
+        "quote": "Orang yang tersenyum selalu lebih kuat dari orang yang marah."
     },
     {
         "by": "Pepatah Cina",
-        "quote": "Orang yang tersenyum selalu lebih kuat dari orang yang marah."
+        "quote": "Orang yang memindahkan gunung memulai dengan memindahkan batu-batu kecil."
     },
     {
         "by": "Pepatah Inggris",
@@ -674,6 +798,10 @@
     {
         "by": "Pepatah Jepang",
         "quote": "Sebatang anak panah mudah dipatahkan, tetapi tidak demikian dengan sepuluh anak panah yang disatukan."
+    },
+    {
+        "by": "Pepatah Jepang",
+        "quote": "Visi tanpa aksi adalah mimpi di siang bolong. Aksi tanpa visi adalah mimpi buruk."
     },
     {
         "by": "Pepatah Jerman",
@@ -701,11 +829,23 @@
     },
     {
         "by": "Pepatah Tibet",
-        "quote": "Apabila seseorang mengajarkan sesuatu, dia sendiri harus melaksanakan ajaran itu."
+        "quote": "Jangan meremehkan raja yang picik, seperti halnya jangan meremehkan sungai yang kecil."
     },
     {
         "by": "Pepatah Tibet",
-        "quote": "Jangan meremehkan raja yang picik, seperti halnya jangan meremehkan sungai yang kecil."
+        "quote": "Apabila seseorang mengajarkan sesuatu, dia sendiri harus melaksanakan ajaran itu."
+    },
+    {
+        "by": "Peter Sinclair",
+        "quote": "Kehidupan yang hebat adalah kulminasi dari pemikiran-pemikiran hebat disertai dengan tindakan-tindakan hebat."
+    },
+    {
+        "by": "Plato",
+        "quote": "Orang bijak berbicara karena mereka mempunyai sesuatu untuk dikatakan, orang bodoh berbicara karena mereka ingin mengatakan sesuatu."
+    },
+    {
+        "by": "Plato",
+        "quote": "Orang bijak berbicara karena ia memiliki sesuatu untuk dikatakan. Orang bodoh berbicara karena ia atau dia harus mengatakan sesuatu."
     },
     {
         "by": "Plato",
@@ -713,15 +853,15 @@
     },
     {
         "by": "Plato",
-        "quote": "Orang bijak berbicara karena ia memiliki sesuatu untuk dikatakan. Orang bodoh berbicara karena ia atau dia harus mengatakan sesuatu."
-    },
-    {
-        "by": "Plautus",
-        "quote": "Jauh lebih mudah memulai secara baik daripada mengakhiri secara baik."
+        "quote": "Siapa yang tidak bisa memimpin dirinya sendiri, tidak akan bisa memimpin orang."
     },
     {
         "by": "Plautus",
         "quote": "Kesabaran adalah obat terbaik untuk semua masalah."
+    },
+    {
+        "by": "Plautus",
+        "quote": "Jauh lebih mudah memulai secara baik daripada mengakhiri secara baik."
     },
     {
         "by": "Pliny The Elder",
@@ -730,6 +870,10 @@
     {
         "by": "R. A. Kartini",
         "quote": "Kemenangan gemilang tidak diperoleh dari medan pertempuran saja, tetapi sering diperoleh dari hati."
+    },
+    {
+        "by": "R. Browning",
+        "quote": "kita jatuh untuk bangun, berhenti untuk berjalan, dan tidur untuk bangun."
     },
     {
         "by": "R. W. Shephred",
@@ -744,12 +888,24 @@
         "quote": "Kebahagiaan bukanlah memiliki apa yang kita inginkan, melainkan menginginkan apa yang kita miliki."
     },
     {
+        "by": "Ralph W. Emerson",
+        "quote": "Satu ons aksi jauh lebih berharga daripada satu ton teori."
+    },
+    {
+        "by": "Ralph W. Emerson",
+        "quote": "Seseorang itu sukses besar jika dia sadar, kegagalan-kegagalannya adalah persiapan untuk kemenangan-kemenangannya."
+    },
+    {
         "by": "Ralph Waldo Emerson",
         "quote": "Kedamaian tidak terdapat di dunia luar, melainkan terdapat dalam jiwa manusia itu sendiri."
     },
     {
         "by": "Ralph Waldo Emerson",
         "quote": "Percayalah kepada orang lain, dan mereka akan tulus kepada Anda. Perlakukan mereka seperti orang besar dan mereka akan memperlihatkan dirinya sebagai orang besar."
+    },
+    {
+        "by": "Rene Descartes",
+        "quote": "Tidak cukup hanya punya otak yang baik. Yang penting adalah menggunakannya secara baik."
     },
     {
         "by": "Richard Bach",
@@ -762,6 +918,10 @@
     {
         "by": "Robert Collier",
         "quote": "Kesempatan Anda untuk sukses di setiap kondisi selalu dapat diukur oleh seberapa besar kepercayaan Anda pada diri sendiri."
+    },
+    {
+        "by": "Robert F. Kennedy",
+        "quote": "Kemajuan merupakan kata-kata merdu, tetapi perubahanlah penggerakknya dan perubahan mempunyai banyak musuh."
     },
     {
         "by": "Robert Frost",
@@ -778,6 +938,14 @@
     {
         "by": "Robert Von Hartman",
         "quote": "Ambisi seperti air laut, semakin banyak orang meminumnya semakin orang menjadi haus."
+    },
+    {
+        "by": "Robinsori",
+        "quote": "Cemas dan ketakutan adalah akibat kebodohan dan keraguan."
+    },
+    {
+        "by": "Romand Rolland",
+        "quote": "Pahlawan adalah seseorang yang melakukan apa yang mampu dia lakukan."
     },
     {
         "by": "Roosevelt",
@@ -798,6 +966,10 @@
     {
         "by": "Scott Fitzgerald",
         "quote": "Ingatlah, jika Anda menutup mulut sebenarnya Anda telah melakukan pilihan."
+    },
+    {
+        "by": "Seneca",
+        "quote": "Hati manusia tidak akan pernah tenteram sebelum berdamai dengan diri sendiri."
     },
     {
         "by": "Seneca",
@@ -857,11 +1029,11 @@
     },
     {
         "by": "Thomas Fuller",
-        "quote": "Menyaksikan adalah mempercayai, tapi merasakan adalah kebenaran."
+        "quote": "Orang yang tidak bisa memaafkan orang lain sama saja dengan orang yang memutuskan jembatan yang harus dilaluinya, karena semua orang perlu dimaafkan."
     },
     {
         "by": "Thomas Fuller",
-        "quote": "Orang yang tidak bisa memaafkan orang lain sama saja dengan orang yang memutuskan jembatan yang harus dilaluinya, karena semua orang perlu dimaafkan."
+        "quote": "Menyaksikan adalah mempercayai, tapi merasakan adalah kebenaran."
     },
     {
         "by": "Thomas Jefferson",
@@ -885,11 +1057,11 @@
     },
     {
         "by": "Victor Hugo",
-        "quote": "Kebahagian tertinggi dalam kehidupan adalah kepastian bahwa Anda dicintai apa adanya, atau lebih tepatnya dicintai walaupun Anda seperti diri Anda adanya."
+        "quote": "Kesedihan adalah buah. Tuhan tak pernah membiarkannya tumbuh dicabang yang terlalu lemah untuk menanggungnya."
     },
     {
         "by": "Victor Hugo",
-        "quote": "Kesedihan adalah buah. Tuhan tak pernah membiarkannya tumbuh dicabang yang terlalu lemah untuk menanggungnya."
+        "quote": "Kebahagian tertinggi dalam kehidupan adalah kepastian bahwa Anda dicintai apa adanya, atau lebih tepatnya dicintai walaupun Anda seperti diri Anda adanya."
     },
     {
         "by": "Victor Hugo",
@@ -910,6 +1082,10 @@
     {
         "by": "Walt Disney",
         "quote": "Cara untuk memulai adalah berhenti berbicara dan mulai lakukan sesuatu."
+    },
+    {
+        "by": "Walter Cronkite",
+        "quote": "Sukses akan lebih permanen jika Anda meraihnya tanpa menghancurkan prinsip-prinsip Anda."
     },
     {
         "by": "Warren Buffett",
@@ -949,11 +1125,19 @@
     },
     {
         "by": "William Shakespeare",
+        "quote": "Bila kamu jujur kepada dirimu sendiri, bagai siang pasti berganti malam, kamu takkan pernah berdusta kepada orang lain."
+    },
+    {
+        "by": "William Shakespeare",
         "quote": "Kutu yang berani adalah kutu yang bisa berani mendapatkan sarapannya pada bibir seekor singa."
     },
     {
         "by": "Winston Churchill",
         "quote": "Kita menyambung hidup dengan apa yang kita peroleh, tapi kita menghadirkan kehidupkan dengan apa yang kita berikan."
+    },
+    {
+        "by": "Wolfgang von Gothe",
+        "quote": "Pengetahuan tidaklah cukup, kita harus mengamalkannya. Niat tidak cukup, kita harus melakukannya."
     },
     {
         "by": "Zachary Scott",
@@ -962,5 +1146,13 @@
     {
         "by": "Zig Zaglar",
         "quote": "Batu fondasi untuk sukses yang seimbang adalah kejujuran, watak, integritas, iman, cinta dan kesetiaan."
+    },
+    {
+        "by": "Zig Zaglar",
+        "quote": "Kebanyakan orang gagal meraih cita-citanya bukan karena mereka tidak mampu, tetapi karena tidak berkomitmen."
+    },
+    {
+        "by": "Zig Zaglar",
+        "quote": "Kita tidak harus hebat saat memulai, tapi kita harus memulai untuk menjadi hebat."
     }
 ]
