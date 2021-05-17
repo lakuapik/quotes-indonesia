@@ -1,2 +1,4 @@
+.deta/
 dev/
+*env
 *.env

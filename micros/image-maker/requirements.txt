@@ -1,0 +1,4 @@
+deta
+flask
+Pillow
+python-dotenv
