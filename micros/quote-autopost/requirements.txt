@@ -1,0 +1,4 @@
+deta
+fastapi
+python-dotenv
+twython

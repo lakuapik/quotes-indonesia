@@ -33,6 +33,12 @@ def http_index():
 
 @app.get('/random')
 def http_random():
+    quotes = db_get_quotes({})
+    quotes = db_cleanup_quotes(quotes)
+    return random.choice(quotes)
+
+@app.get('/random-ready')
+def http_random_ready():
     query = db_appends
     quotes = db_get_quotes(query)
     quotes = db_cleanup_quotes(quotes)
@@ -50,4 +56,4 @@ def run_refresh_database(event):
         for quote in quotes:
             quote.update(db_appends)
             db.put(quote)
-    return "✔ success"
+    return '✔ success'
