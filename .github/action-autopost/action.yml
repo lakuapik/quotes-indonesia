@@ -1,0 +1,6 @@
+name: Autopost
+description: Automatic posting to multiple social media handle
+
+runs:
+  using: docker
+  image: Dockerfile

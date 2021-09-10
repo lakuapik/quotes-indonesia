@@ -1,0 +1,4 @@
+Pillow
+pydash
+twython
+requests

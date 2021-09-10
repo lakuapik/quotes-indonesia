@@ -1,0 +1,28 @@
+name: Autopost
+
+on:
+  # push:
+  #   branches:
+  #     - master
+  schedule:
+    - cron: "30 0 * * *" # every day at 7:30am GMT+7
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Autopost
+        uses: ./.github/action-autopost/
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7.0.0
+        with:
+          message: "run autopost"
+          author_name: github-actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
