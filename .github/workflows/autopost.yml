@@ -25,6 +25,8 @@ jobs:
           TW_API_SECRET: ${{ secrets.TW_API_SECRET }}
           TW_OAUTH_SECRET: ${{ secrets.TW_OAUTH_SECRET }}
           TW_OAUTH_TOKEN: ${{ secrets.TW_OAUTH_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          IG_OAUTH_TOKEN: ${{ secrets.IG_OAUTH_TOKEN }}
       - name: Commit changes
         uses: EndBug/add-and-commit@v7.0.0
         with:

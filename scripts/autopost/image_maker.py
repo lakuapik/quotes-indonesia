@@ -6,6 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 FONTS = [
     'https://cdn.statically.io/gh/google/fonts/main/ofl/neucha/Neucha.ttf',
+    # 'https://cdn.statically.io/gh/google/fonts/main/ofl/catamaran/Catamaran%5Bwght%5D.ttf',
     # font_base_url + 'lobstertwo.ttf',
     # font_base_url + 'underdog.ttf',
     # font_base_url + 'specialelite.ttf',

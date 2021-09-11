@@ -5,7 +5,7 @@ from pydash import py_
 from io import BytesIO
 from twython import Twython
 from datetime import datetime
-from image_maker import image_maker, image_maker_make_file
+from image_maker import image_maker_make_file
 
 
 FB_PAGE_ID = os.environ.get('FB_PAGE_ID')
@@ -18,6 +18,9 @@ TW_API_KEY = os.environ.get('TW_API_KEY')
 TW_API_SECRET = os.environ.get('TW_API_SECRET')
 TW_OAUTH_TOKEN = os.environ.get('TW_OAUTH_TOKEN')
 TW_OAUTH_SECRET = os.environ.get('TW_OAUTH_SECRET')
+
+IG_ACCOUNT_ID = os.environ.get('IG_ACCOUNT_ID')
+IG_OAUTH_TOKEN = os.environ.get('IG_OAUTH_TOKEN')
 
 
 quotes_file = open('quotes.json', 'r+')
@@ -93,9 +96,31 @@ def post_to_twitter_as_image(image_path: str) -> bool:
     return tweet.get('created_at') != None
 
 
+def post_to_instagram(image_path: str) -> bool:
+    files = {'files[]': open(image_path, 'rb')}
+    image_uploaded = requests.post('https://tmp.ninja/upload.php', files=files)
+    if image_uploaded.status_code != 200:
+        return False
+    image_url = image_uploaded.json()['files'][0]['url']
+    ig_base_url = f"https://graph.facebook.com/{IG_ACCOUNT_ID}"
+    response_post = requests.post(f"{ig_base_url}/media", {
+        'image_url': image_url,
+        'access_token': IG_OAUTH_TOKEN,
+    })
+    if response_post.status_code != 200:
+        return False
+    creation_id = response_post.json().get('id')
+    response_publish = requests.post(f"{ig_base_url}/media_publish", {
+        'creation_id': creation_id,
+        'access_token': IG_OAUTH_TOKEN,
+    })
+
+    return response_publish.status_code == 200
+
+
 def rewrite_quotes_file() -> None:
     quotes_file.seek(0)
-    quotes_file.write(json.dumps(quotes, indent=2, sort_keys=True))
+    quotes_file.write(json.dumps(quotes, indent=2))
     quotes_file.truncate()
 
 
@@ -109,11 +134,11 @@ def autopost() -> None:
     formatted_quote = f"{quote['quote']} --{quote['by']}"
     print(f"\n> chosen: id={quote['id']} \n>> {formatted_quote}")
 
-    if (should_post_as_image):
-        # note, using bytesio for multiple times wont work, dont know why
-        # so we use image_path instead of image_io
-        image_path = image_maker_make_file(quote['by'], quote['quote'])
+    # note, using bytesio for multiple times wont work, dont know why
+    # so we use image_path instead of image_io
+    image_path = image_maker_make_file(quote['by'], quote['quote'])
 
+    if (should_post_as_image):
         post_tg = post_to_telegram_as_image(image_path)
         if post_tg:
             py_.set(quotes, f"{quote_index}.posted_telegram_at", now)
@@ -144,6 +169,12 @@ def autopost() -> None:
         if post_tw:
             py_.set(quotes, f"{quote_index}.posted_twitter_at", now)
         print(f"\n> posted to twitter as text: {post_tw}")
+
+    # for instagram, always post as image
+    post_ig = post_to_instagram(image_path)
+    if post_ig:
+        py_.set(quotes, f"{quote_index}.posted_instagram_at", now)
+    print(f"\n> posted to instagram as text: {post_ig}")
 
     rewrite_quotes_file()
 

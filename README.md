@@ -1,6 +1,6 @@
 # Quotes Indonesia
 
-Long story short, i have a quote posting social media page on facebook, twitter, and telegram.
+Long story short, i have a quote posting social media page on facebook, twitter, telegram, and instagram.
 
 This is tools i used to manage those social medias, including scheduling, autopost, and quote image maker.
 
