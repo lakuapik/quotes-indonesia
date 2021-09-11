@@ -17,7 +17,14 @@ jobs:
       - name: Autopost
         uses: ./.github/action-autopost/
         env:
+          FB_OAUTH_TOKEN: ${{ secrets.FB_OAUTH_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          TG_BOT_CHANNEL: ${{ secrets.TG_BOT_CHANNEL }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TW_API_KEY: ${{ secrets.TW_API_KEY }}
+          TW_API_SECRET: ${{ secrets.TW_API_SECRET }}
+          TW_OAUTH_SECRET: ${{ secrets.TW_OAUTH_SECRET }}
+          TW_OAUTH_TOKEN: ${{ secrets.TW_OAUTH_TOKEN }}
       - name: Commit changes
         uses: EndBug/add-and-commit@v7.0.0
         with:
