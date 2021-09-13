@@ -138,7 +138,7 @@ def autopost() -> None:
     # so we use image_path instead of image_io
     image_path = image_maker_make_file(quote['by'], quote['quote'])
 
-    if (should_post_as_image):
+    if (should_post_as_image()):
         post_tg = post_to_telegram_as_image(image_path)
         if post_tg:
             py_.set(quotes, f"{quote_index}.posted_telegram_at", now)
