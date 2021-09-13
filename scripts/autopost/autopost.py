@@ -103,8 +103,10 @@ def post_to_instagram(image_path: str) -> bool:
         return False
     image_url = image_uploaded.json()['files'][0]['url']
     ig_base_url = f"https://graph.facebook.com/{IG_ACCOUNT_ID}"
+    caption = '#quotes_idna #quotesindonesia #qotdindonesia #katakatabijak #katatokoh #kutipan #motivasi #inspirasi'
     response_post = requests.post(f"{ig_base_url}/media", {
         'image_url': image_url,
+        'caption': caption,
         'access_token': IG_OAUTH_TOKEN,
     })
     if response_post.status_code != 200:
