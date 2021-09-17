@@ -2,7 +2,6 @@ import os
 import json
 import requests
 from pydash import py_
-from io import BytesIO
 from twython import Twython
 from datetime import datetime
 from image_maker import image_maker_make_file
@@ -33,9 +32,8 @@ unposted_quotes = py_.filter(quotes, lambda q: (
 
 
 def should_post_as_image() -> bool:
-    day = int(datetime.now().strftime('%d'))
-
-    return True if (day % 5 == 0) else False
+    # when today date is divisible by 5
+    return int(datetime.now().strftime('%d')) % 5 == 0
 
 
 def post_to_telegram_as_text(text: str) -> bool:
@@ -48,7 +46,7 @@ def post_to_telegram_as_text(text: str) -> bool:
 
 
 def post_to_telegram_as_image(image_path: str) -> bool:
-    tg_url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendPhoto?"
+    tg_url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendPhoto"
     response = requests.post(
         url=tg_url,
         data={'chat_id': TG_BOT_CHANNEL},
@@ -58,7 +56,7 @@ def post_to_telegram_as_image(image_path: str) -> bool:
     return response.status_code == 200
 
 
-def post_to_facebook_as_text(text: str):
+def post_to_facebook_as_text(text: str) -> bool:
     fb_url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
     response = requests.post(fb_url, {
         'message': text,
@@ -68,7 +66,7 @@ def post_to_facebook_as_text(text: str):
     return response.status_code == 200
 
 
-def post_to_facebook_as_image(image_path: str):
+def post_to_facebook_as_image(image_path: str) -> bool:
     fb_url = f"https://graph.facebook.com/{FB_PAGE_ID}/photos"
     response = requests.post(
         url=fb_url,
@@ -111,7 +109,7 @@ def post_to_instagram(image_path: str) -> bool:
     })
     if response_post.status_code != 200:
         return False
-    creation_id = response_post.json().get('id')
+    creation_id = response_post.json()['id']
     response_publish = requests.post(f"{ig_base_url}/media_publish", {
         'creation_id': creation_id,
         'access_token': IG_OAUTH_TOKEN,
@@ -136,8 +134,8 @@ def autopost() -> None:
     formatted_quote = f"{quote['quote']} --{quote['by']}"
     print(f"\n> chosen: id={quote['id']} \n>> {formatted_quote}")
 
-    # note, using bytesio for multiple times wont work, dont know why
-    # so we use image_path instead of image_io
+    # note: using bytesio for multiple times wont work, dont know why
+    # so we use image_path instead of image as bytesio
     image_path = image_maker_make_file(quote['by'], quote['quote'])
 
     if (should_post_as_image()):
