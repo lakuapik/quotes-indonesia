@@ -79,7 +79,7 @@ def post_to_facebook_as_image(image_path: str) -> bool:
 
 def post_to_twitter_as_text(text: str) -> bool:
     tags = '#quotesindonesia #qotdindonesia #kutipan #motivasi #inspirasi'
-    twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET)
+    twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET, client_args={'timeout': 10})
     text_with_hastag = f'{text}\n\n{tags}'
     tweet = twitr.update_status(status=text_with_hastag[0:280])
 
@@ -87,7 +87,7 @@ def post_to_twitter_as_text(text: str) -> bool:
 
 
 def post_to_twitter_as_image(image_path: str) -> bool:
-    twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET)
+    twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET, client_args={'timeout': 10})
     media = twitr.upload_media(media=open(image_path, 'rb'))
     tweet = twitr.update_status(media_ids=[media['media_id']])
 
