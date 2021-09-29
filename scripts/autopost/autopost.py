@@ -137,6 +137,12 @@ def autopost() -> None:
     # note: using bytesio for multiple times wont work, dont know why
     # so we use image_path instead of image as bytesio
     image_path = image_maker_make_file(quote['by'], quote['quote'])
+    
+    # for instagram, always post as image
+    post_ig = post_to_instagram(image_path)
+    if post_ig:
+        py_.set(quotes, f"{quote_index}.posted_instagram_at", now)
+    print(f"\n> posted to instagram as text: {post_ig}")
 
     if (should_post_as_image()):
         post_tg = post_to_telegram_as_image(image_path)
@@ -169,12 +175,6 @@ def autopost() -> None:
         if post_tw:
             py_.set(quotes, f"{quote_index}.posted_twitter_at", now)
         print(f"\n> posted to twitter as text: {post_tw}")
-
-    # for instagram, always post as image
-    post_ig = post_to_instagram(image_path)
-    if post_ig:
-        py_.set(quotes, f"{quote_index}.posted_instagram_at", now)
-    print(f"\n> posted to instagram as text: {post_ig}")
 
     rewrite_quotes_file()
 
