@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha&display=swap">
+  <title>Quotes Indonesia</title>
+  <style>
+    blockquote {font-size: 2rem; margin: 1rem; padding-left: 1rem;}
+    #quote::before { content: '“'; font-size: 6rem; position: absolute; right: 100%;}
+    #by::before { content: '-- '; }
+  </style>
+</head>
+
+<body style="font-family: 'Neucha';">
+  <div style="max-width: 720px;margin: 20vh auto;">
+    <main>
+      <h1>Quotes Indonesia</h1>
+      <hr>
+      <blockquote style="position: relative; margin:1em">
+        <p id="quote">Manusia akan bahagia selama ia memilih untuk bahagia.</p>
+        <p id="by">Alexander Solzhenitsyn</p>
+      </blockquote>
+      <hr>
+    </main>
+    <footer style="margin-top: 2rem;">
+      <a href="/">quote</a> |
+      <a href="/terms.html">terms</a> |
+      <a href="/privacy.html">privacy</a>
+    </footer>
+  </div>
+  <script>
+    let quotes = [],
+        url = 'https://cdn.statically.io/gh/lakuapik/quotes-indonesia/master/raw/quotes.min.json';
+    function updateQuote() {
+      const random = Math.floor(Math.random() * quotes.length);
+      const quote = quotes[random];
+      document.querySelector('#quote').innerHTML = quote.quote;
+      document.querySelector('#by').innerHTML = quote.by;
+    }
+    fetch(url).then(res => res.json()).then(data => {
+      quotes = data;
+      updateQuote();
+    });
+  </script>
+</body>
+
+</html>
