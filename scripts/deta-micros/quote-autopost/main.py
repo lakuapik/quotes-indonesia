@@ -22,7 +22,7 @@ def get_one_random_quote():
         'posted_twitter_at': 'NULL',
     }))[0]
     # check at least one quote exists
-    if (len(quotes) == 0):
+    if not quotes:
         return None
     # get one random quote
     return random.choice(quotes)
