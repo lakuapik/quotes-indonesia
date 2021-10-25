@@ -83,7 +83,7 @@ def post_to_twitter_as_text(text: str) -> bool:
     text_with_hastag = f'{text}\n\n{tags}'
     tweet = twitr.update_status(status=text_with_hastag[0:280])
 
-    return tweet.get('created_at') != None
+    return tweet.get('created_at') is not None
 
 
 def post_to_twitter_as_image(image_path: str) -> bool:
@@ -91,7 +91,7 @@ def post_to_twitter_as_image(image_path: str) -> bool:
     media = twitr.upload_media(media=open(image_path, 'rb'))
     tweet = twitr.update_status(media_ids=[media['media_id']])
 
-    return tweet.get('created_at') != None
+    return tweet.get('created_at') is not None
 
 
 def post_to_instagram(image_path: str) -> bool:
