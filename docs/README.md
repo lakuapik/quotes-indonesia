@@ -1,3 +1,5 @@
 # Quotes Indonesia Website
 
-Visit https://quotes.davids.id
+Visit https://qi.davids.id
+
+To run locally: `npx servor --reload`

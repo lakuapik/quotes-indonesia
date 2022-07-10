@@ -25,8 +25,9 @@ IG_OAUTH_TOKEN = os.environ.get('IG_OAUTH_TOKEN')
 quotes_file = open('quotes.json', 'r+')
 quotes = json.loads(quotes_file.read())
 unposted_quotes = py_.filter(quotes, lambda q: (
-    q['posted_facebook_at'] == ''
-    and q['posted_telegram_at'] == ''
+    # q['posted_facebook_at'] == ''
+    # and q['posted_instagram_at'] == ''
+    q['posted_telegram_at'] == ''
     and q['posted_twitter_at'] == ''
 ))
 
@@ -137,12 +138,12 @@ def autopost() -> None:
     # note: using bytesio for multiple times wont work, dont know why
     # so we use image_path instead of image as bytesio
     image_path = image_maker_make_file(quote['by'], quote['quote'])
-    
+
     # for instagram, always post as image
-    post_ig = post_to_instagram(image_path)
-    if post_ig:
-        py_.set(quotes, f"{quote_index}.posted_instagram_at", now)
-    print(f"\n> posted to instagram as text: {post_ig}")
+    # post_ig = post_to_instagram(image_path)
+    # if post_ig:
+    #     py_.set(quotes, f"{quote_index}.posted_instagram_at", now)
+    # print(f"\n> posted to instagram as text: {post_ig}")
 
     if (should_post_as_image()):
         post_tg = post_to_telegram_as_image(image_path)
@@ -150,10 +151,10 @@ def autopost() -> None:
             py_.set(quotes, f"{quote_index}.posted_telegram_at", now)
         print(f"\n> posted to telegram as image: {post_tg}")
 
-        post_fb = post_to_facebook_as_image(image_path)
-        if post_fb:
-            py_.set(quotes, f"{quote_index}.posted_facebook_at", now)
-        print(f"\n> posted to facebook as image: {post_fb}")
+        # post_fb = post_to_facebook_as_image(image_path)
+        # if post_fb:
+        #     py_.set(quotes, f"{quote_index}.posted_facebook_at", now)
+        # print(f"\n> posted to facebook as image: {post_fb}")
 
         post_tw = post_to_twitter_as_image(image_path)
         if post_tw:
@@ -166,10 +167,10 @@ def autopost() -> None:
             py_.set(quotes, f"{quote_index}.posted_telegram_at", now)
         print(f"\n> posted to telegram as text: {post_tg}")
 
-        post_fb = post_to_facebook_as_text(formatted_quote)
-        if post_fb:
-            py_.set(quotes, f"{quote_index}.posted_facebook_at", now)
-        print(f"\n> posted to telegram as text: {post_fb}")
+        # post_fb = post_to_facebook_as_text(formatted_quote)
+        # if post_fb:
+        #     py_.set(quotes, f"{quote_index}.posted_facebook_at", now)
+        # print(f"\n> posted to facebook as text: {post_fb}")
 
         post_tw = post_to_twitter_as_text(formatted_quote)
         if post_tw:
