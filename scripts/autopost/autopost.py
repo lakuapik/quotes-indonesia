@@ -38,85 +38,103 @@ def should_post_as_image() -> bool:
 
 
 def post_to_telegram_as_text(text: str) -> bool:
-    tg_url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage?"
-    tg_url += f"text={requests.utils.quote(text)}"
-    tg_url += f"&chat_id={TG_BOT_CHANNEL}"
-    response = requests.get(tg_url)
+    try:
+        tg_url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage?"
+        tg_url += f"text={requests.utils.quote(text)}"
+        tg_url += f"&chat_id={TG_BOT_CHANNEL}"
+        response = requests.get(tg_url)
 
-    return response.status_code == 200
-
+        return response.status_code == 200
+    except:
+        return False
 
 def post_to_telegram_as_image(image_path: str) -> bool:
-    tg_url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendPhoto"
-    response = requests.post(
-        url=tg_url,
-        data={'chat_id': TG_BOT_CHANNEL},
-        files={'photo': open(image_path, 'rb')}
-    )
+    try:
+        tg_url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendPhoto"
+        response = requests.post(
+            url=tg_url,
+            data={'chat_id': TG_BOT_CHANNEL},
+            files={'photo': open(image_path, 'rb')}
+        )
 
-    return response.status_code == 200
+        return response.status_code == 200
+    except: 
+        return False
 
 
 def post_to_facebook_as_text(text: str) -> bool:
-    fb_url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
-    response = requests.post(fb_url, {
-        'message': text,
-        'access_token': FB_OAUTH_TOKEN,
-    })
+    try:
+        fb_url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
+        response = requests.post(fb_url, {
+            'message': text,
+            'access_token': FB_OAUTH_TOKEN,
+        })
 
-    return response.status_code == 200
+        return response.status_code == 200
+    except:
+        return False
 
 
 def post_to_facebook_as_image(image_path: str) -> bool:
-    fb_url = f"https://graph.facebook.com/{FB_PAGE_ID}/photos"
-    response = requests.post(
-        url=fb_url,
-        data={'access_token': FB_OAUTH_TOKEN},
-        files={'source': open(image_path, 'rb')}
-    )
+    try:
+        fb_url = f"https://graph.facebook.com/{FB_PAGE_ID}/photos"
+        response = requests.post(
+            url=fb_url,
+            data={'access_token': FB_OAUTH_TOKEN},
+            files={'source': open(image_path, 'rb')}
+        )
 
-    return response.status_code == 200
-
+        return response.status_code == 200
+    except:
+        return False
 
 def post_to_twitter_as_text(text: str) -> bool:
-    tags = '#quotesindonesia #qotdindonesia #kutipan #motivasi #inspirasi'
-    twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET, client_args={'timeout': 10})
-    text_with_hastag = f'{text}\n\n{tags}'
-    tweet = twitr.update_status(status=text_with_hastag[0:280])
+    try:
+        tags = '#quotesindonesia #qotdindonesia #kutipan #motivasi #inspirasi'
+        twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET, client_args={'timeout': 10})
+        text_with_hastag = f'{text}\n\n{tags}'
+        tweet = twitr.update_status(status=text_with_hastag[0:280])
 
-    return tweet.get('created_at') is not None
+        return tweet.get('created_at') is not None
+    except:
+        return False
 
 
 def post_to_twitter_as_image(image_path: str) -> bool:
-    twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET, client_args={'timeout': 10})
-    media = twitr.upload_media(media=open(image_path, 'rb'))
-    tweet = twitr.update_status(media_ids=[media['media_id']])
+    try:
+        twitr = Twython(TW_API_KEY, TW_API_SECRET, TW_OAUTH_TOKEN, TW_OAUTH_SECRET, client_args={'timeout': 10})
+        media = twitr.upload_media(media=open(image_path, 'rb'))
+        tweet = twitr.update_status(media_ids=[media['media_id']])
 
-    return tweet.get('created_at') is not None
-
+        return tweet.get('created_at') is not None
+    except:
+        return False
 
 def post_to_instagram(image_path: str) -> bool:
-    files = {'files[]': open(image_path, 'rb')}
-    image_uploaded = requests.post('https://tmp.ninja/upload.php', files=files)
-    if image_uploaded.status_code != 200:
-        return False
-    image_url = image_uploaded.json()['files'][0]['url']
-    ig_base_url = f"https://graph.facebook.com/{IG_ACCOUNT_ID}"
-    caption = '#quotes_idna #quotesindonesia #qotdindonesia #katakatabijak #katatokoh #kutipan #motivasi #inspirasi'
-    response_post = requests.post(f"{ig_base_url}/media", {
-        'image_url': image_url,
-        'caption': caption,
-        'access_token': IG_OAUTH_TOKEN,
-    })
-    if response_post.status_code != 200:
-        return False
-    creation_id = response_post.json()['id']
-    response_publish = requests.post(f"{ig_base_url}/media_publish", {
-        'creation_id': creation_id,
-        'access_token': IG_OAUTH_TOKEN,
-    })
+    try:
+        files = {'files[]': open(image_path, 'rb')}
+        image_uploaded = requests.post('https://tmp.ninja/upload.php', files=files)
+        if image_uploaded.status_code != 200:
+            return False
+        image_url = image_uploaded.json()['files'][0]['url']
+        ig_base_url = f"https://graph.facebook.com/{IG_ACCOUNT_ID}"
+        caption = '#quotes_idna #quotesindonesia #qotdindonesia #katakatabijak #katatokoh #kutipan #motivasi #inspirasi'
+        response_post = requests.post(f"{ig_base_url}/media", {
+            'image_url': image_url,
+            'caption': caption,
+            'access_token': IG_OAUTH_TOKEN,
+        })
+        if response_post.status_code != 200:
+            return False
+        creation_id = response_post.json()['id']
+        response_publish = requests.post(f"{ig_base_url}/media_publish", {
+            'creation_id': creation_id,
+            'access_token': IG_OAUTH_TOKEN,
+        })
 
-    return response_publish.status_code == 200
+        return response_publish.status_code == 200
+    except:
+        return False
 
 
 def rewrite_quotes_file() -> None:
