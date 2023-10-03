@@ -43,6 +43,7 @@ COLORS = [
 
 
 def image_maker(quote_by: str, quote_body: str) -> BytesIO:
+    #
     # image configuration
     img_width = 612
     img_height = 612
@@ -105,6 +106,7 @@ def image_maker(quote_by: str, quote_body: str) -> BytesIO:
 
 
 def image_maker_make_file(quote_by: str, quote_body: str) -> str:
+    #
     image_io = image_maker(quote_by, quote_body)
     fd, image_path = tempfile.mkstemp(suffix='.jpg')
     image_file = open(image_path, 'wb')
