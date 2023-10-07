@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd scripts/autopost
-          pip install -r scripts/autopost/requirements.txt
+          pip install -r requirements.txt
       - name: Autopost
         run: |
           cd scripts/autopost
